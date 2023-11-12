@@ -9,6 +9,6 @@
         </referenceBlock>
 
         <referenceBlock name="wish-list-link" remove="true" />
-        <!-- <referenceBlock name="logo" remove="true" /> -->
+        <referenceBlock name="my-account-link" remove="true" />
     </body>
 </page>
