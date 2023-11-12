@@ -13,6 +13,7 @@
         <referenceBlock name="my-account-link" remove="true" />
 
         <move element="top.search" destination="header.panel" before="top.links" after="store_language" />
+
         <move element="minicart" destination="header.panel" before="-" />
 
         <!-- <move element="top.links" destination="header.panel" after="top.search" /> -->
