@@ -2,4 +2,12 @@
 
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
     <update handle="3columns" />
+
+    <referenceBlock name="wish-list-link" remove="true" />
+
+    <referenceBlock name="my-account-link" remove="true" />
+
+    <move element="top.search" destination="header.panel" before="top.links" after="store_language" />
+
+    <move element="minicart" destination="header.panel" before="-" />
 </layout>

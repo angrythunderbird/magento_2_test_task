@@ -7,15 +7,5 @@
                 <argument name="logo_width" xsi:type="number">170</argument>
             </arguments>
         </referenceBlock>
-
-        <referenceBlock name="wish-list-link" remove="true" />
-
-        <referenceBlock name="my-account-link" remove="true" />
-
-        <move element="top.search" destination="header.panel" before="top.links" after="store_language" />
-
-        <move element="minicart" destination="header.panel" before="-" />
-
-        <!-- <move element="top.links" destination="header.panel" after="top.search" /> -->
     </body>
 </page>
