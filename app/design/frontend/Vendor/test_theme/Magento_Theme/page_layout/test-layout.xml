@@ -10,4 +10,13 @@
     <move element="top.search" destination="header.panel" before="top.links" after="store_language" />
 
     <move element="minicart" destination="header.panel" before="-" />
+
+    <referenceContainer name="columns">
+        <container name="sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+            <block template="Magento_Theme::test-template.phtml" />
+        </container>
+        <container name="sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+            <block template="Magento_Theme::test-template.phtml" />
+        </container>
+    </referenceContainer>
 </layout>
