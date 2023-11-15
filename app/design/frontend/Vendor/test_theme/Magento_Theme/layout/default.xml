@@ -3,5 +3,17 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <attribute name="class" value="page-layout-3columns" />
+
+        <referenceContainer name="main">
+            <container name="main.content.wrapper" htmlTag="div" htmlClass="main-content-wrapper">
+                <container name="templates.wrapper" htmlTag="div" htmlClass="templates-wrapper">
+                    <block name="template.1" template="Magento_Theme::template-1.phtml" />
+                    <block name="template.2" template="Magento_Theme::template-2.phtml" />
+                </container>
+                <container name="button.popup.wrapper" htmlTag="div" htmlClass="button-popup-wrapper">
+                    <block name="button.popup" template="Magento_Theme::button.phtml" />
+                </container>
+            </container>
+        </referenceContainer>
     </body>
 </page>
