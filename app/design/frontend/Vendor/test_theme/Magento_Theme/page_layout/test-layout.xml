@@ -3,6 +3,8 @@
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
     <update handle="3columns" />
 
+    <referenceContainer name="header-wrapper" remove="true" />
+    <referenceContainer name="columns.top" remove="true" />
     <referenceContainer name="wish-list-link" remove="true" />
     <referenceContainer name="my-account-link" remove="true" />
     <referenceContainer name="catalog.compare.sidebar" remove="true" />
@@ -14,8 +16,10 @@
 
     <referenceContainer name="columns">
         <container name="sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
-            <block template="Magento_Theme::test-template.phtml" />
+            <block template="Magento_Theme::tabs-template.phtml" />
         </container>
-        <container name="sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main" />
+        <container name="sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" before="main" />
     </referenceContainer>
+
+
 </layout>

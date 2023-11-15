@@ -1,11 +1,13 @@
 define(["jquery", "slick"], function ($) {
     return function (config, element) {
         $(document).ready(function () {
-            if ($(element).closest().hasClass("active")) {
-                $(".templates-wrapper").toggle(true);
-                $(".button-popup-wrapper").toggle(false);
+            if ($(element).parent().hasClass("active")) {
+                toggler();
             }
-            $(element).on("click", function () {
+
+            $(element).on("click", toggler);
+
+            function toggler() {
                 $(".templates-wrapper").toggle(true);
                 $(".button-popup-wrapper").toggle(false);
                 $(".templates-wrapper").not(".slick-initialized").slick({
@@ -15,7 +17,7 @@ define(["jquery", "slick"], function ($) {
                     slidesToShow: 1,
                     adaptiveHeight: true,
                 });
-            });
+            }
         });
     };
 });

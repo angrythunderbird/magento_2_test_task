@@ -15,5 +15,13 @@
                 </container>
             </container>
         </referenceContainer>
+
+        <referenceContainer name="sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional">
+            <block class="Magento\Cms\Block\Block" name="custom_admin_block">
+                <arguments>
+                    <argument name="1" xsi:type="string">custom_admin_block</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
     </body>
 </page>

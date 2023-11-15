@@ -1,8 +1,5 @@
 <div id="tabs-aside" class="product data items tabs-content"
-     data-mage-init='{
-        "mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabled": [2], "disabledState": "disabled"},
-        "Magento_Theme/js/test-script": {}
-    }'>
+data-mage-init='{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabled": [2], "disabledState": "disabled"}}'>
     <div class="item title tabTitle" data-role="collapsible">
         <a id="tab1" class="switch" data-toggle="trigger" href="#tab-carousel">Tab1</a>
     </div>
@@ -16,7 +13,7 @@
 
  <script type="text/x-magento-init">
     {
-        "#tabs-aside": {"Magento_Theme/js/tabs": {}, "Magento_Theme/js/test-script": {}},
+        "*": {"Magento_Theme/js/content-script": {}},
         "#tab1": {"Magento_Theme/js/carousel": {}},
         "#tab2": {"Magento_Theme/js/button": {}}
     }
