@@ -24,3 +24,5 @@ Replace `/app` folder with corresponding folder from this repo. Also copy the fo
 `bin/magento setup:upgrade `
 
 ## Go to "magento.test" in your browser
+
+### Maybe with God's help it will work
